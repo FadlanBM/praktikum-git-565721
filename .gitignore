@@ -1,0 +1,19 @@
+# Dependensi
+node_modules/
+vendor/
+
+# Environment Variables (Sangat Penting!)
+.env
+.env.local
+
+# Log
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build Output
+dist/
+build/
