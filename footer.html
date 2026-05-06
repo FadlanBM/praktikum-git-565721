@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footer Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #004aad;
+            --secondary-color: #00d4ff;
+            --accent-color: #ff9f1c;
+            --text-light: #f8f9fa;
+            --footer-bg: #1a1a1a;
+            --footer-text: #adb5bd;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 80px 0 30px;
+        }
+
+        .footer-brand {
+            font-weight: 700;
+            color: white !important;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .footer-title {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--footer-text);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255,255,255,0.05);
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .footer-bottom {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Space -->
+    <div style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+        <p class="text-muted">Content above the footer...</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Brand & About -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="#" class="footer-brand">
+                        <i class="fas fa-hand-holding-usd me-2 text-info"></i>LOANSMART
+                    </a>
+                    <p class="mb-4">Kami menyediakan solusi keuangan tercepat dan terpercaya untuk membantu Anda mewujudkan impian, mulai dari pinjaman pribadi hingga modal usaha.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+                    <h4 class="footer-title">Tautan Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Layanan Kami</a></li>
+                        <li><a href="#">Berita Terbaru</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+                    <h4 class="footer-title">Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Pinjaman Pribadi</a></li>
+                        <li><a href="#">Kredit Usaha</a></li>
+                        <li><a href="#">Pinjaman Pendidikan</a></li>
+                        <li><a href="#">Kredit Kendaraan</a></li>
+                        <li><a href="#">KPR Rumah</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Hubungi Kami</h4>
+                    <ul class="footer-links contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jl. Jenderal Sudirman No. 123, Jakarta Selatan, Indonesia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+62 21 555 1234</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@loansmart.co.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="row footer-bottom">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 LoanSmart. Seluruh hak cipta dilindungi.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-links d-inline-flex mb-0">
+                        <li class="ms-3"><a href="#">Syarat & Ketentuan</a></li>
+                        <li class="ms-3"><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
