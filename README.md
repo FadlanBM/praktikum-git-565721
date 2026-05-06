@@ -9,7 +9,7 @@ Project ini adalah sebuah landing page perbankan/pinjaman (Loan Service) yang di
 3. Untuk mencoba fitur **Dark Mode**, tekan tombol **'D'** pada keyboard Anda saat halaman terbuka.
 
 ## Screenshot Website
-![Landing Page Screenshot](landing_page_screenshot_1778028927325.png)
+![Landing Page Screenshot](landingpage.png)
 
 ## Dokumentasi Perintah Git
 
